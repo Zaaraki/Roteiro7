@@ -4,7 +4,7 @@
 
 #include "Consultor.h"
 
-Consultor::Consultor(int matricula, string &nome, float salario, float bonus)
+Consultor::Consultor(int matricula, const string &nome, float salario, float bonus)
 : Funcionario(matricula, nome, salario), bonus(bonus){}
 
 float Consultor::getSalario() const {

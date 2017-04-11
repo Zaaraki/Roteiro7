@@ -7,13 +7,14 @@
 
 #include "Funcionario.h"
 
+
 class Consultor : public Funcionario{
 private:
     float bonus;
 
 public:
     Consultor(int matricula, const string &nome, float salario, float bonus);
-    float getSalario() const override ;
+    float getSalario() const ;
     float getSalario(float porcentagem) const;
 
 };

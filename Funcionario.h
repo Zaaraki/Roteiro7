@@ -6,9 +6,10 @@
 #define ROTEIRO7_FUNCIONARIO_H
 
 #include <string>
+using namespace std;
 
 class Funcionario {
-private:
+protected:
     int matricula;
     string nome;
     float salario;
@@ -16,7 +17,7 @@ private:
 public:
     Funcionario(int matricula, const string &nome, float salario);
     void setMatricula(int matricula);
-    void setNome(string nome);
+    void setNome(const string &nome);
     void setSalario(float salario);
     int getMatricula() const ;
     string getNome() const ;
